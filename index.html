@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>mtcars Data Analysis - Shiny App</title>
+  <meta charset="utf-8">
+  <meta name="description" content="mtcars Data Analysis - Shiny App">
+  <meta name="author" content="Jayaprakash">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>mtcars Data Analysis - Shiny App</h1>
+    <h2>Developing Data Products Project - Pitch Slidify</h2>
+    <p>Jayaprakash<br/>Fri, 17 Apr 2015</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Introduction</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This shiny application presents exploratory data analysis of mtcars dataset. Choose the number of cylinders between (4, 6 and 8) and the transmission type (Automatic or Manual) to get the summary statistics and the corresponding bar chart is rendered in the plot tab.</p>
+
+<p><a href="https://github.com/somalinga-jayaprakash/DevelopingDataProducts">Application Github Repository</a> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class1" id="id1" style="background:;">
+  <hgroup>
+    <h2>Input User Interface</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>On the left Sidebar, a radio button input for number of cylinders and drop down for transmission type is displayed as depicted below.</p>
+
+<p><img src="SidebarPanel.PNG" alt="input"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class2" id="id2" style="background:;">
+  <hgroup>
+    <h2>Output Tab1 - Stats Summary</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Depending on the number of cylinders (4, 6 and 8) and the transmission type  (Automatic or Manual) chosen, corresponding summary statistics, standard deviation and data view are shown in the Main Panel.</p>
+
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##   21.50   22.15   22.80   22.90   23.60   24.40
+</code></pre>
+
+<pre><code>## [1] 1.452584
+</code></pre>
+
+<pre><code>##                mpg cyl  disp hp drat    wt  qsec vs am gear carb
+## Merc 240D     24.4   4 146.7 62 3.69 3.190 20.00  1  0    4    2
+## Merc 230      22.8   4 140.8 95 3.92 3.150 22.90  1  0    4    2
+## Toyota Corona 21.5   4 120.1 97 3.70 2.465 20.01  1  0    3    1
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class3" id="id3" style="background:;">
+  <hgroup>
+    <h2>Output Tab2 - Plot</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>When you click on the Plot Tab on the right Main Panel, depending on the number of cylinders (4, 6 and 8) and the transmission type  (Automatic or Manual) chosen, corresponding bar plot for Model by Miles Per Gallon is rendered in the Main Panel.</p>
+
+<p><img src="Plot.PNG" alt="input"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Introduction'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Input User Interface'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Output Tab1 - Stats Summary'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Output Tab2 - Plot'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
